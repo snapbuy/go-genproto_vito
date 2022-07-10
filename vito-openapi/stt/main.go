@@ -1,6 +1,9 @@
 package main
 
-import "github.com/vito-ai/go-genproto"
+import (
+	_"github.com/vito-ai/go-genproto"
+	"fmt"
+	)
 
 func vito() string{
 	return vito-stt-client.pb()
