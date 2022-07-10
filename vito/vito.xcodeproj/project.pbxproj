@@ -11,6 +11,7 @@
 		96BA95AF287A56900039BA9B /* vito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BA95A4287A56900039BA9B /* vito.framework */; };
 		96BA95B4287A56900039BA9B /* vitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA95B3287A56900039BA9B /* vitoTests.swift */; };
 		96BA95B5287A56900039BA9B /* vito.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BA95A7287A56900039BA9B /* vito.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96BA95C0287A58C70039BA9B /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 96BA95BF287A58C70039BA9B /* Vapor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BA95C0287A58C70039BA9B /* Vapor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +115,9 @@
 			dependencies = (
 			);
 			name = vito;
+			packageProductDependencies = (
+				96BA95BF287A58C70039BA9B /* Vapor */,
+			);
 			productName = vito;
 			productReference = 96BA95A4287A56900039BA9B /* vito.framework */;
 			productType = "com.apple.product-type.framework";
@@ -162,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 96BA959A287A56900039BA9B;
+			packageReferences = (
+				96BA95BE287A58C70039BA9B /* XCRemoteSwiftPackageReference "vapor" */,
+			);
 			productRefGroup = 96BA95A5287A56900039BA9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,6 +481,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96BA95BE287A58C70039BA9B /* XCRemoteSwiftPackageReference "vapor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/vapor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96BA95BF287A58C70039BA9B /* Vapor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96BA95BE287A58C70039BA9B /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = Vapor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96BA959B287A56900039BA9B /* Project object */;
 }
